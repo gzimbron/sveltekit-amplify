@@ -3,6 +3,13 @@
 	"version": "0.0.1",
 	"private": true,
 	"license": "MIT",
+	"keywords": [
+		"sveltekit",
+		"tailwindcss",
+		"amplify",
+		"vitest",
+		"clean architecture"
+	],
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
