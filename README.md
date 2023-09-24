@@ -1,38 +1,36 @@
-# create-svelte
+# Sveltekit + Amplify + Clean Architecture
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+En este proyecto trato de seguir los principios de Clean Architecture, para ello he creado una estructura de carpetas que se adapta al principio.
+Los módulos están la carpeta "features" y cada módulo está dividido en domain, infrastructure y application, hay un directorio `src/features/_TEMPLATE` que sirve de plantilla para crear nuevos módulos.
 
-## Creating a project
+## Disclaimer
 
-If you're seeing this, you've probably already done this step. Congrats!
+Este proyecto está en desarrollo, no es un proyecto de producción, es un proyecto de aprendizaje.
+
+## Instalando Amplify
+
+Ejecuta el siguiente comando para crear un nuevo proyecto de Amplify:
 
 ```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
+# debes tener instalado amplify cli y aws cli configurado
+amplify init
 ```
 
-## Developing
+## Ejecutar el proyecto
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Primero instala las dependencias con el comando `npm install` (`pnpm install` o `yarn`), y corre ejecuta el script dev:
 
 ```bash
 npm run dev
 
-# or start the server and open the app in a new browser tab
+# abre una ventana de navegador con el proyecto automáticamente
 npm run dev -- --open
 ```
 
 ## Building
 
-To create a production version of your app:
+PAra construir la app para producción:
 
 ```bash
 npm run build
 ```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
